@@ -287,16 +287,24 @@
                     <!-- <span class="fs-3"><i class="bi bi-chat-left-quote"></i> 
                       <span class="talk-title">Talk Title</span>  
                       <small class="text-muted"><a href="#"></a></small></span> -->
-                      <span class="talk-title"><a href="#">Sumegha Garg</a></span> 
+                      <span class="talk-title"><a href="#">Sumegha Garg</a>: The Coin Problem with Applications to Data Streams</span> 
                       <br><br> 
-                    <!-- <p>
-                      This talk will be about blah blah blah. Autem iusto
-                      eos praesentium aliquam expedita repellendus
-                      necessitatibus. Laboriosam porro enim earum. Commodi
-                      velit eligendi aperiam iusto. Atque velit
-                      perferendis voluptas doloremque maiores. Accusamus
-                      quo et necessitatibus ut soluta quo voluptatem.
-                    </p> -->
+                    <p> Consider the problem of computing the majority of a stream of n i.i.d. uniformly random bits. 
+					This problem, known as the coin problem, is central to a number of counting problems in different data stream models. 
+					We show that any streaming algorithm for solving this problem with large constant advantage (over the uniform distribution) 
+					must use Ω(log n) bits of space. Previously, it was known that computing the majority on every input with a constant probability 
+					takes Ω(log n) space. We extend our lower bound to proving tight lower bounds for solving multiple, randomly interleaved copies 
+					of the coin problem, as well as for solving the OR of multiple copies of a variant of the coin problem. Our proofs involve new measures 
+					of information complexity that are well-suited for data streams.
+
+					We use these lower bounds to obtain a number of new results for data streams. In each case there is an underlying d-dimensional 
+					vector x with additive updates to its coordinates given in a stream of length m. The input streams arising from our coin lower bound 
+					have nice distributional properties, and consequently for many problems for which we only had lower bounds in general turnstile streams, 
+					we now obtain the same lower bounds in more natural models, such as the bounded deletion model, in which ||x||_2 never drops by a 
+					constant fraction of what it was earlier, or in the random order model, in which the updates are ordered randomly.
+
+					Based on joint work with Mark Braverman and David P. Woodruff.
+                    </p>
                   </div>
                 </div>
                 <hr />
