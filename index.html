@@ -262,16 +262,17 @@
                     <!-- <span class="fs-3"><i class="bi bi-chat-left-quote"></i> 
                       <span class="talk-title">Talk Title</span>  
                       <small class="text-muted"><a href="#"></a></small></span> -->
-                      <span class="talk-title"><a href="#">Jelani Nelson</a></span> 
+                      <span class="talk-title"><a href="#">Jelani Nelson</a>: Optimal bounds for approximate counting</span> 
                       <br><br> 
-                    <!-- <p>
-                      This talk will be about blah blah blah. Autem iusto
-                      eos praesentium aliquam expedita repellendus
-                      necessitatibus. Laboriosam porro enim earum. Commodi
-                      velit eligendi aperiam iusto. Atque velit
-                      perferendis voluptas doloremque maiores. Accusamus
-                      quo et necessitatibus ut soluta quo voluptatem.
-                    </p> -->
+                    <p>
+                      Counting up to N deterministically of course takes Theta(log N) bits. In the first ever streaming algorithm, 
+					  Morris in 1978 gave a randomized algorithm that improved upon this bound exponentially. The best known analysis 
+					  of his algorithm shows that it gives a 1+eps approximation to N with probability at least 1-delta using 
+					  O(loglog N + log(1/eps) + log(1/delta)) bits with high probability (the space usage is itself a random variable). 
+					  We show that a very slight (but necessary) tweak of his algorithm actually achieves the better bound 
+					  O(loglog N + log(1/eps) + loglog(1/delta)) bits, and we also show a new matching lower bound, establishing optimality. 
+					  Our upper and lower bounds nearly match, up to small explicit constant factors. Joint work with Huacheng Yu.
+                    </p>
                   </div>
                 </div>
                 <hr />
@@ -482,9 +483,18 @@ Based on joint work with Roie Levin.
                     <span class="talk-title"><a href="#">Sofya Raskhodnikova</a>: Isoperimetric Inequalities for the Hypercube with Applications to Monotonicity Testing</span> 
                       <br><br> 
                     <p>
-                      A celebrated line of work on isoperimetric inequalities for the hypercube [Margulis '74, Talagrand '93, Chakrabarty and Seshadhri '13, Khot Minzer Safra '15] studies the size of the ''boundary'' between the points on which a Boolean function takes value 0 and the points on which it takes value 1. This boundary is defined in terms of the (directed or undirected) edges of a high-dimensional hypercube that represents the domain of the function. The inequality of Khot, Minzer, and Safra '15 implies all the previous inequalities in this line of work. It relates the average of the square root of the number of decreasing edges incident on a vertex of the hypercube to the distance to monotonicity of the function. <br><br>
+                      A celebrated line of work on isoperimetric inequalities for the hypercube 
+					  [Margulis '74, Talagrand '93, Chakrabarty and Seshadhri '13, Khot Minzer Safra '15] 
+					  studies the size of the ''boundary'' between the points on which a Boolean function takes value 0 and the points on which it takes value 1. 
+					  This boundary is defined in terms of the (directed or undirected) edges of a high-dimensional hypercube that represents the domain of 
+					  the function. The inequality of Khot, Minzer, and Safra '15 implies all the previous inequalities in this line of work. 
+					  It relates the average of the square root of the number of decreasing edges incident on a vertex of the hypercube to the distance to 
+					  monotonicity of the function. <br><br>
  
-We generalize all the inequalities in this line of work to real-valued functions. Our main contribution is a Boolean decomposition that represents every real-valued function f over an arbitrary partially ordered domain as a collection of Boolean functions over the same domain, roughly capturing the distance of f to monotonicity and the structure of violations of f to monotonicity.  We apply our generalized isoperimetric inequalities to improve algorithms for testing monotonicity and approximating the distance to monotonicity for real-valued functions.<br><br>
+We generalize all the inequalities in this line of work to real-valued functions. Our main contribution is a Boolean decomposition that represents every 
+real-valued function f over an arbitrary partially ordered domain as a collection of Boolean functions over the same domain, roughly capturing the distance 
+of f to monotonicity and the structure of violations of f to monotonicity.  We apply our generalized isoperimetric inequalities to improve algorithms for 
+testing monotonicity and approximating the distance to monotonicity for real-valued functions.<br><br>
  
 Based on joint work with Hadley Black (UCLA) and Iden Kalemaj (Boston University).
                     </p>
