@@ -55,6 +55,19 @@
     </style>
 
     <title>Workshop on Algorithms for Large Data (Online) 2021</title>
+	
+	<script language="JavaScript" type="text/JavaScript">
+	function toggle(id) {
+	if (document.getElementById){
+		if (document.getElementById(id).style.display == "none"){
+			document.getElementById(id).style.display = "flex";
+			}
+		else{
+			document.getElementById(id).style.display = "none";
+			}
+		}
+	}
+	</script>
   </head>
   <body>
     
@@ -204,7 +217,6 @@
                     <!-- <span class="fs-3"><i class="bi bi-chat-left-quote"></i> 
                       <small class="text-muted"><a href="#">Robert Krauthgamer</a></small></span> -->
                       <span class="talk-title"><a href="http://www.wisdom.weizmann.ac.il/~robi/">Robert Krauthgamer</a>: Streaming Algorithms for Geometric Steiner Forest</span> 
-                      <br><br> 
 					  [<a href="javascript:toggle('RK')">Abstract</a>]
 					  <div id="RK" style="display: none">
 					  <p>
@@ -273,7 +285,8 @@
                       <span class="talk-title">Talk Title</span>  
                       <small class="text-muted"><a href="#"></a></small></span> -->
                       <span class="talk-title"><a href="http://people.eecs.berkeley.edu/~minilek/">Jelani Nelson</a>: Optimal bounds for approximate counting</span> 
-                      <br><br> 
+                      [<a href="javascript:toggle('JN')">Abstract</a>]
+					  <div id="JN" style="display: none">
                     <p>
                       Counting up to N deterministically of course takes Theta(log N) bits. In the first ever streaming algorithm, 
 					  Morris in 1978 gave a randomized algorithm that improved upon this bound exponentially. The best known analysis 
@@ -283,6 +296,7 @@
 					  O(loglog N + log(1/eps) + loglog(1/delta)) bits, and we also show a new matching lower bound, establishing optimality. 
 					  Our upper and lower bounds nearly match, up to small explicit constant factors. Joint work with Huacheng Yu.
                     </p>
+					</div>
                   </div>
                 </div>
                 <hr />
@@ -298,14 +312,15 @@
                       <span class="talk-title">Talk Title</span>  
                       <small class="text-muted"><a href="#"></a></small></span> -->
                       <span class="talk-title"><a href="https://sites.google.com/view/sumegha-garg/home">Sumegha Garg</a>: The Coin Problem with Applications to Data Streams </span> 
-                      <br><br> 
+                      [<a href="javascript:toggle('SG')">Abstract</a>]
+					  <div id="SG" style="display: none">
                     <p> Consider the problem of computing the majority of a stream of n i.i.d. uniformly random bits. 
 					This problem, known as the coin problem, is central to a number of counting problems in different data stream models. 
 					We show that any streaming algorithm for solving this problem with large constant advantage (over the uniform distribution) 
 					must use Ω(log n) bits of space. Previously, it was known that computing the majority on every input with a constant probability 
 					takes Ω(log n) space. We extend our lower bound to proving tight lower bounds for solving multiple, randomly interleaved copies 
 					of the coin problem, as well as for solving the OR of multiple copies of a variant of the coin problem. Our proofs involve new measures 
-					of information complexity that are well-suited for data streams.
+					of information complexity that are well-suited for data streams.</br></br>
 
 					We use these lower bounds to obtain a number of new results for data streams. In each case there is an underlying d-dimensional 
 					vector x with additive updates to its coordinates given in a stream of length m. The input streams arising from our coin lower bound 
@@ -315,6 +330,7 @@
 
 					Based on joint work with Mark Braverman and David P. Woodruff.
                     </p>
+					</div>
                   </div>
                 </div>
                 <hr />
@@ -342,7 +358,8 @@
                       <span class="talk-title">Talk Title</span>  
                       <small class="text-muted"><a href="#"></a></small></span> -->
                       <span class="talk-title"><a href="http://madhu.seas.harvard.edu/">Madhu Sudan</a>: Streaming Complexity of Constraint Satisfaction Problems </span> 
-                      <br><br> 
+                      [<a href="javascript:toggle('MS')">Abstract</a>]
+					  <div id="MS" style="display: none">
                     <p>
                       In this talk we will describe some of our recent work giving new upper and lower bounds on the approximability of 
 					  constraint satisfaction problems (CSPs) in the (single-pass, often dynamic) streaming settings. In particular, 
@@ -364,6 +381,7 @@
 						
 						4) Chi-Ning Chou, Alexander Golovnev, Madhu Sudan, Ameya Velingker, Santhoshini Velusamy: Linear Space Streaming Lower Bounds for Approximating CSPs. CoRR abs/2106.13078 (2021)
                     </p>
+					</div>
                   </div>
                 </div>
                 <hr />
@@ -438,20 +456,24 @@
                       <span class="talk-title">Talk Title</span>  
                       <small class="text-muted"><a href="#"></a></small></span> -->
                       <span class="talk-title"><a href="https://web.stanford.edu/~wajc/">David Wajc</a>: Streaming Submodular Matching Meets the Primal-Dual Method</span> 
-                      <br><br> 
+                      [<a href="javascript:toggle('DWajc')">Abstract</a>]
+					  <div id="DWajc" style="display: none">
                     <p>
-                      I will discuss the (semi-)streaming submodular matching problem, where the edges of an unknown n-node graph are presented one by one, and the objective is to, using only \tilde{O}(n) bits of memory, output a matching of high value, as quantified by some submodular function. This problem, which generalizes semi-streaming matching and weighted matching, is one of the first problems studied in the context of streaming submodular optimization, and has spurred the development of key techniques in the area. <br><br>
+                      I will discuss the (semi-)streaming submodular matching problem, where the edges of an unknown n-node graph are presented one by one, and 
+					  the objective is to, using only \tilde{O}(n) bits of memory, output a matching of high value, as quantified by some submodular function. 
+					  This problem, which generalizes semi-streaming matching and weighted matching, is one of the first problems studied in the context of 
+					  streaming submodular optimization, and has spurred the development of key techniques in the area. <br><br>
 
 
 
-We present a number of improved upper and lower bounds on the approximability of this problem. I will outline the new techniques used to obtain our upper bounds (applying the primal-dual method to a natural configuration LP for our streaming submodular problem) and our lower bounds (combining conditional and unconditional hardness in a streaming context). I will leave time to discuss a number of intriguing follow-up directions and open questions.<br><br>
+					We present a number of improved upper and lower bounds on the approximability of this problem. I will outline the new techniques used to 
+					obtain our upper bounds (applying the primal-dual method to a natural configuration LP for our streaming submodular problem) and our 
+					lower bounds (combining conditional and unconditional hardness in a streaming context). I will leave time to discuss a number of intriguing 
+					follow-up directions and open questions.<br><br>
 
-
-
-Based on joint work with Roie Levin.
-
-
+					Based on joint work with Roie Levin.
                     </p>
+					</div>
                   </div>
                 </div>
                 <hr />
@@ -512,7 +534,8 @@ Based on joint work with Roie Levin.
                       <small class="text-muted"><a href="#"></a></small>
                     </span> -->
                     <span class="talk-title"><a href="https://cs-people.bu.edu/sofya/">Sofya Raskhodnikova</a>: Isoperimetric Inequalities for the Hypercube with Applications to Monotonicity Testing</span> 
-                      <br><br> 
+                    [<a href="javascript:toggle('SR')">Abstract</a>]
+					 <div id="SR" style="display: none">
                     <p>
                       A celebrated line of work on isoperimetric inequalities for the hypercube 
 					  [Margulis '74, Talagrand '93, Chakrabarty and Seshadhri '13, Khot Minzer Safra '15] 
@@ -526,9 +549,10 @@ We generalize all the inequalities in this line of work to real-valued functions
 real-valued function f over an arbitrary partially ordered domain as a collection of Boolean functions over the same domain, roughly capturing the distance 
 of f to monotonicity and the structure of violations of f to monotonicity.  We apply our generalized isoperimetric inequalities to improve algorithms for 
 testing monotonicity and approximating the distance to monotonicity for real-valued functions.<br><br>
- 
+
 Based on joint work with Hadley Black (UCLA) and Iden Kalemaj (Boston University).
                     </p>
+					</div>
                   </div>
                 </div>
                 <hr />
@@ -580,7 +604,8 @@ Based on joint work with Hadley Black (UCLA) and Iden Kalemaj (Boston University
                       <span class="talk-title">Talk Title</span>  
                       <small class="text-muted"><a href="#"></a></small></span> -->
                       <span class="talk-title"><a href="https://www.cc.gatech.edu/~rpeng/">Richard Peng</a>: Fully Dynamic Effective Resistance</span> 
-                      <br><br> 
+                      [<a href="javascript:toggle('RP')">Abstract</a>]
+					  <div id="RP" style="display: none">
                     <p>
                      Effective resistance is a physics-motivated quantity that encapsulates both the congestion and the dilation of a flow. 
 					 It has close connections with many key concepts in combinatorial optimization, graph sparsification, and network science, 
@@ -590,6 +615,7 @@ Based on joint work with Hadley Black (UCLA) and Iden Kalemaj (Boston University
 					 It will focus on random walk interpretations of Schur Complements, which are intermediate states of Gaussian elimination. 
 					 Potential connections with vertex sparsification and fine-grained complexity will also be discussed.
                     </p>
+					</div>
                   </div>
                 </div>
                 <hr />
@@ -676,10 +702,19 @@ Based on joint work with Hadley Black (UCLA) and Iden Kalemaj (Boston University
                       <span class="talk-title">Talk Title</span>  
                       <small class="text-muted"><a href="#"></a></small></span> -->
                       <span class="talk-title"> <a href="https://www.cs.purdue.edu/homes/pdrineas/index.html">Petros Drineas</a>: Randomized Linear Algebra for Interior Point Methods</span> 
-                      <br><br> 
+                      [<a href="javascript:toggle('PD')">Abstract</a>]
+					  <div id="PD" style="display: none"> 
                     <p>
-                      Linear programming is a central problem in computer science and applied mathematics with numerous applications across a wide range of domains, including machine learning and data science.  Interior point methods (IPMs) are a common approach to solving linear programs with strong theoretical guarantees and solid empirical performance. The time complexity of these methods is dominated by the cost of solving a linear system of equations at each iteration. In common applications of linear programming, particularly in data science and scientific computing, the size of this linear system can become prohibitively large, requiring the use of iterative solvers which provide an approximate solution to the linear system. Approximately solving the linear system at each iteration of an IPM invalidates common analyses of IPMs and the theoretical guarantees they provide.  In this talk we will discuss how randomized linear algebra can be used to design and analyze theoretically and practically efficient IPMs when using approximate linear solvers.
+                      Linear programming is a central problem in computer science and applied mathematics with numerous applications across a wide range of domains, 
+					  including machine learning and data science.  Interior point methods (IPMs) are a common approach to solving linear programs with 
+					  strong theoretical guarantees and solid empirical performance. The time complexity of these methods is dominated by the cost of solving a 
+					  linear system of equations at each iteration. In common applications of linear programming, particularly in data science and 
+					  scientific computing, the size of this linear system can become prohibitively large, requiring the use of iterative solvers which provide 
+					  an approximate solution to the linear system. Approximately solving the linear system at each iteration of an IPM invalidates common analyses 
+					  of IPMs and the theoretical guarantees they provide.  In this talk we will discuss how randomized linear algebra can be used to 
+					  design and analyze theoretically and practically efficient IPMs when using approximate linear solvers.
                     </p>
+					</div>
                   </div>
                 </div>
                 <hr />
@@ -695,7 +730,8 @@ Based on joint work with Hadley Black (UCLA) and Iden Kalemaj (Boston University
                       <span class="talk-title">Talk Title</span>  
                       <small class="text-muted"><a href="#"></a></small></span> -->
                       <span class="talk-title"><a href="https://ccanonne.github.io/">Cl&eacute;ment Canonne</a>: The Price of Tolerance in Distribution Testing</span> 
-                      <br><br> 
+                      [<a href="javascript:toggle('CC')">Abstract</a>]
+					  <div id="CC" style="display: none">
                     <p>
                       Given samples from an unknown distribution p over {1,2,...,n}, how much
 data is required to decide whether p is eps-far from the uniform
@@ -718,6 +754,7 @@ Joint work with Ayush Jain, Gautam Kamath, and Jerry Li
 (arXiv:abs/2106.13414).
                     </p>
                   </div>
+				  </div>
                 </div>
                 <hr />
                 
@@ -751,10 +788,12 @@ Joint work with Ayush Jain, Gautam Kamath, and Jerry Li
                       <span class="talk-title">Talk Title</span>  
                       <small class="text-muted"><a href="#"></a></small></span> -->
                       <span class="talk-title"><a href="https://www.danaron.sites.tau.ac.il/">Dana Ron</a>: Optimal Distribution-Free Sample-Based Testing  of Subsequence-Freeness</span> 
-                      <br><br> 
+                      [<a href="javascript:toggle('DR')">Abstract</a>]
+					  <div id="DR" style="display: none">
                     <p>
                       In this work, we study the problem of testing subsequence-freeness.
-For a given subsequence (word)  w = w_1 … w_k, a sequence (text)  T = t_1 \dots t_n is said to contain w if there exist indices 1 <=  i_1 < …  < i_k <= n such that  t_{i_{j}} = w_j for every 1 <= j <= k.  Otherwise, T is w-free. <br><br>
+For a given subsequence (word)  w = w_1 … w_k, a sequence (text)  T = t_1 \dots t_n is said to contain w if there exist indices 1 <=  i_1 < …  < i_k <= n 
+such that  t_{i_{j}} = w_j for every 1 <= j <= k.  Otherwise, T is w-free. <br><br>
 
 While a large majority of the research in property testing deals with algorithms that perform queries, here we consider sample-based testing (with one-sided error).  In the ``standard'' sample-based model (i.e., under the uniform distribution), the algorithm is given samples (i,t_i) where i is distributed uniformly independently at random. The algorithm should distinguish between the case that T is w-free, and the case that T is \epsilon-far from being w-free (i.e., more than an \epsilon-fraction of its symbols should be modified so as to make it w-free).
 
@@ -762,7 +801,7 @@ Freitag, Price, and Swartworth (Proceedings of RANDOM, 2017) showed that O(k^2\l
 
  
 
-We obtain the following results.
+We obtain the following results. <br><br>
 
 +  The number of samples sufficient for sample-based testing (under the uniform distribution) is O(k/\epsilon). This upper bound builds on a characterization that we present for the distance of a text T from w-freeness in terms of the maximum number of copies of w in T, where these copies should obey certain restrictions.<br><br>
 
@@ -776,6 +815,7 @@ We highlight the fact that while we require that the testing algorithm work for 
 
 This is joint work with Asaf Rosin.
                     </p>
+					</div>
                   </div>
                 </div>
                 <hr />
@@ -827,14 +867,19 @@ This is joint work with Asaf Rosin.
                       <span class="talk-title">Talk Title</span>  
                       <small class="text-muted"><a href="#"></a></small></span> -->
                       <span class="talk-title"><a href="https://sites.google.com/view/edentalya/home">Talya Eden</a>: Approximating the Arboricity in Sublinear Time </span> 
-                      <br><br> 
+                      [<a href="javascript:toggle('TE')">Abstract</a>]
+					  <div id="TE" style="display: none">
                     <p>
-                    We consider the problem of approximating the arboricity of a graph $G=(V,E)$, which we denote by $arb(G)$, in sublinear time, where the arboricity of a graph is the minimal number of forests required to cover its edges. An algorithm for this problem may perform degree and neighbor queries, and is allowed a small error probability. We design an algorithm that outputs an estimate $\hat{\alpha}$, such that with probability $1-1/poly(n)$, $arb(G)/c log2 n \leq   \hat{\alpha} \leq \arb(G)$ , where $n=|V|$ and $c$ is a constant. The expected query complexity and running time of the algorithm are $O(n/arb(G))\cdot \poly(\log n)$, and this upper bound also holds with high probability. This bound is optimal for such an approximation up to a $poly(log n)$ factor.
-
-
+                    We consider the problem of approximating the arboricity of a graph $G=(V,E)$, which we denote by $arb(G)$, in sublinear time, where the 
+					arboricity of a graph is the minimal number of forests required to cover its edges. An algorithm for this problem may perform degree and 
+					neighbor queries, and is allowed a small error probability. We design an algorithm that outputs an estimate $\hat{\alpha}$, such that with 
+					probability $1-1/poly(n)$, $arb(G)/c log2 n \leq   \hat{\alpha} \leq \arb(G)$ , where $n=|V|$ and $c$ is a constant. The expected 
+					query complexity and running time of the algorithm are $O(n/arb(G))\cdot \poly(\log n)$, and this upper bound also holds with high probability. 
+					This bound is optimal for such an approximation up to a $poly(log n)$ factor.</br></br>
 
 					Based on joint work with Saleet Mossel and Dana Ron.
                     </p>
+					</div>
                   </div>
                 </div>
                 <hr />
@@ -945,7 +990,8 @@ This is joint work with Asaf Rosin.
                       <span class="talk-title">Talk Title</span>  
                       <small class="text-muted"><a href="#"></a></small></span> -->
                       <span class="talk-title"><a href="http://homes.sice.indiana.edu/qzhangcs/">Qin Zhang</a>: Collaborative Learning with Communication Constraints</span> 
-                      <br><br> 
+                      [<a href="javascript:toggle('QZ')">Abstract</a>]
+					  <div id="QZ" style="display: none"> 
                     <p>
                       Reinforcement learning has witnessed great research advancement in recent years and achieved successes in many practical applications. 
 					  However, reinforcement-learning algorithms also have the reputation for being data- and computation-hungry for large-scale applications. 
@@ -955,6 +1001,7 @@ This is joint work with Asaf Rosin.
 					  future directions.
                     </p>
                   </div>
+				  </div>
                 </div>
                 <hr />
 
@@ -969,7 +1016,8 @@ This is joint work with Asaf Rosin.
                       <span class="talk-title">Talk Title</span>  
                       <small class="text-muted"><a href="#"></a></small></span> -->
                       <span class="talk-title"><a href="https://sites.google.com/site/erikwaing/home">Erik Waingarten</a>: Sketching Geometric MST and EMD </span> 
-                      <br><br> 
+                      [<a href="javascript:toggle('EW')">Abstract</a>]
+					  <div id="EW" style="display: none">
                      <p>
                       We give new sketching algorithms for Geometric MST and EMD. For Geometric MST, we are given n points x1, …, xn\in[N]^d, 
 					  and we give a linear sketch that can approximate the minimum over all spanning trees T of [n]^2 of ∑_{(i,j)\in T} | x_i - x_j|_p, where p\in[1,2] 
@@ -987,6 +1035,7 @@ This is joint work with Asaf Rosin.
 
 Joint work with Xi Chen, Rajesh Jayaram, and Amit Levi.
                     </p> 
+					</div>
                   </div>
                 </div>
                 <hr />
