@@ -960,16 +960,25 @@ This is joint work with Asaf Rosin.
                     <!-- <span class="fs-3"><i class="bi bi-chat-left-quote"></i> 
                       <span class="talk-title">Talk Title</span>  
                       <small class="text-muted"><a href="#"></a></small></span> -->
-                      <span class="talk-title"><a href="https://sites.google.com/site/erikwaing/home">Erik Waingarten</a></span> 
+                      <span class="talk-title"><a href="https://sites.google.com/site/erikwaing/home">Erik Waingarten</a>: Sketching Geometric MST and EMD </span> 
                       <br><br> 
-                    <!-- <p>
-                      This talk will be about blah blah blah. Autem iusto
-                      eos praesentium aliquam expedita repellendus
-                      necessitatibus. Laboriosam porro enim earum. Commodi
-                      velit eligendi aperiam iusto. Atque velit
-                      perferendis voluptas doloremque maiores. Accusamus
-                      quo et necessitatibus ut soluta quo voluptatem.
-                    </p> -->
+                     <p>
+                      We give new sketching algorithms for Geometric MST and EMD. For Geometric MST, we are given n points x1, …, xn\in[N]^d, 
+					  and we give a linear sketch that can approximate the minimum over all spanning trees T of [n]^2 of ∑_{(i,j)\in T} | x_i - x_j|_p, where p\in[1,2] 
+					  up to a factor of ~O(log n) using space polylog(n,d,N). For EMD, we are given two sets A, B of n points in [N]^d, and we give a linear sketch 
+					  that can approximate the Earth Mover Distance of A and B in L_p (the cost of minimum-cost matching between A and B) up to multiplicative factor of ~O(log n) 
+					  and additive factor epsilon*Nnd using space poly(1/epsilon, log(nd)) (the additive error can be removed with two rounds of sketching). These linear sketches 
+					  give corresponding streaming algorithms. <br><br>
+
+						Prior work gave sketches which were tailored for low-dimensional spaces (since space complexity was exponential in dimension), or 
+						suffered approximations which degraded as the dimension increased. I'll survey what's known about these two problems, and explain 
+						the main idea behind our new sketches. Namely, we revisit the method of tree embeddings in the context of these sketching algorithms, 
+						and give a new "data-dependent" tree embedding which doesn't suffer a degrading distortion as the dimension increases. As we go, 
+						I'll make sure to highlight a lot of really exciting open problems related to MST and EMD, as well as geometric sketching/streaming 
+						algorithms more broadly. <br><br>
+
+Joint work with Xi Chen, Rajesh Jayaram, and Amit Levi.
+                    </p> 
                   </div>
                 </div>
                 <hr />
