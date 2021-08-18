@@ -932,16 +932,18 @@ This is joint work with Asaf Rosin.
                     <!-- <span class="fs-3"><i class="bi bi-chat-left-quote"></i> 
                       <span class="talk-title">Talk Title</span>  
                       <small class="text-muted"><a href="#"></a></small></span> -->
-                      <span class="talk-title"><a href="https://jerryzli.github.io/">Jerry Li</a></span> 
-                      <br><br> 
-                    <!-- <p>
-                      This talk will be about blah blah blah. Autem iusto
-                      eos praesentium aliquam expedita repellendus
-                      necessitatibus. Laboriosam porro enim earum. Commodi
-                      velit eligendi aperiam iusto. Atque velit
-                      perferendis voluptas doloremque maiores. Accusamus
-                      quo et necessitatibus ut soluta quo voluptatem.
-                    </p> -->
+                      <span class="talk-title"><a href="https://jerryzli.github.io/">Jerry Li</a>: Fast and Near-Optimal Diagonal Preconditioning </span> 
+                      [<a href="javascript:toggle('JL')">Abstract</a>]
+					  <div id="JL" style="display: none"> 
+                    <p>
+                      In this talk, we consider the problem of preconditioning a given matrix M by a diagonal matrix. In other words, the problem is to find a 
+					  scaling of the rows or columns of M which maximally improves the condition number of M. This is a well studied problem in numerical computing, 
+					  and heuristics such as Jacobi preconditioning are widely used in practice to solve it. Despite this, the problem remains poorly understood. 
+					  We make two contributions to this front: (1) we provide new, optimal guarantees for Jacobi preconditioning, demonstrating that it achieves 
+					  a quadratic approximation to the optimal scaling, and moreover, this is optimal, and (2) we provide new, nearly-linear time algorithms which 
+					  computes a constant factor scaling for M. We achieve these algorithms by developing new solvers for structured mixed packing and covering SDPs. Finally, we demonstrate applications of these techniques to settings such as semi-random linear regression, and improving risk in several statistical regression models.
+                    </p>
+					</div>
                   </div>
                 </div>
                 <hr />
