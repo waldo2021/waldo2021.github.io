@@ -248,16 +248,28 @@
                     <!-- <span class="fs-3"><i class="bi bi-chat-left-quote"></i> 
                       <span class="talk-title">Talk Title</span>  
                       <small class="text-muted"><a href="#">Sepehr Assadi</a></small></span> -->
-                      <span class="talk-title"><a href="https://www.cs.rutgers.edu/~sa1497/">Sepehr Assadi</a></span> 
-                      <br><br> 
-                    <!-- <p>
-                      This talk will be about blah blah blah. Autem iusto
-                      eos praesentium aliquam expedita repellendus
-                      necessitatibus. Laboriosam porro enim earum. Commodi
-                      velit eligendi aperiam iusto. Atque velit
-                      perferendis voluptas doloremque maiores. Accusamus
-                      quo et necessitatibus ut soluta quo voluptatem.
-                    </p> -->
+                      <span class="talk-title"><a href="https://www.cs.rutgers.edu/~sa1497/">Sepehr Assadi</a>: Multi-Pass Graph Streaming Lower Bounds for Parameter Estimation and Property Testing Problems</span> 
+                      [<a href="javascript:toggle('SA')">Abstract</a>]
+					  <div id="SA" style="display: none">
+					  <p>
+                      There has been a rapidly growing interest in recent years in understanding various graph parameter estimation problems such as estimating 
+					  the size of maximum cuts or maximum matchings, weight of minimum spanning trees, or property testing problems such as connectivity, 
+					  cycle-freeness, or bipartiteness in the streaming model. However, from the lower bound perspective, almost all prior work has solely 
+					  focused on single-pass algorithms and not much is known for multi-pass algorithms, even in just two passes. <br><br>
+
+						In this talk, we discuss the first multi-pass lower bounds for a wide family of these problems: for many problems of interest, 
+						including all the above, obtaining a (1+eps)-approximation requires near-linear space or Omega(1/eps) passes, even on highly 
+						restricted families of graphs such as bounded-degree planar graphs. A key ingredient of our proofs is a simple streaming XOR Lemma, 
+						a generic hardness amplification result that might be of independent interest: informally speaking, if a p-pass s-space streaming 
+						algorithm can only solve a decision problem with advantage delta > 0 over random guessing, then it cannot solve XOR of L independent 
+						copies of the problem with advantage much better than delta^L. </br></br>
+
+					We will also discuss open problems and possible directions for future work. Based on the following joint works: </br>
+Sepehr Assadi and Vishvajeet N: Graph Streaming Lower Bounds for Parameter Estimation and Property Testing via a Streaming XOR Lemma (arXiv: abs/2104.04908) 
+</br>
+Sepehr Assadi, Gillat Kol, Raghuvansh Saxena, and Huacheng Yu: Multi-Pass Graph Streaming Lower Bounds for Cycle Counting, MAX-CUT, Matching Size, and Other Problems (arXiv: abs/2009.03038)
+                    </p>
+				</div>
                   </div>
                 </div>
                 <hr />
@@ -671,16 +683,28 @@ Based on joint work with Hadley Black (UCLA) and Iden Kalemaj (Boston University
                     <!-- <span class="fs-3"><i class="bi bi-chat-left-quote"></i> 
                       <span class="talk-title">Talk Title</span>  
                       <small class="text-muted"><a href="#"></a></small></span> -->
-                      <span class="talk-title"><a href="http://www.cs.cmu.edu/~dwoodruf/">David P. Woodruff</a></span> 
-                      <br><br> 
-                    <!-- <p>
-                      This talk will be about blah blah blah. Autem iusto
-                      eos praesentium aliquam expedita repellendus
-                      necessitatibus. Laboriosam porro enim earum. Commodi
-                      velit eligendi aperiam iusto. Atque velit
-                      perferendis voluptas doloremque maiores. Accusamus
-                      quo et necessitatibus ut soluta quo voluptatem.
-                    </p> -->
+                      <span class="talk-title"><a href="http://www.cs.cmu.edu/~dwoodruf/">David P. Woodruff</a>: Tight Bounds for Adversarially Robust Streams and Sliding Windows via Difference Estimators</span> 
+                      [<a href="javascript:toggle('DW')">Abstract</a>]
+					  <div id="DW" style="display: none"> 
+                    <p>
+                      In the adversarially robust streaming model, a stream of elements is presented to an algorithm and is allowed to depend on the output 
+					  of the algorithm at earlier times during the stream. In the classic insertion-only model of data streams, Ben-Eliezer et. al. show how 
+					  to convert a non-robust algorithm into a robust one with a roughly 1/eps factor overhead. This was subsequently improved to a 
+					  1/sqrt{eps} factor overhead by Hassidim et. al., suppressing logarithmic factors. For general functions the latter is known to be 
+					  best-possible, by a result of Kaplan et. al. We show how to bypass this impossibility result by developing data stream algorithms for a 
+					  large class of streaming problems, with no overhead in the approximation factor. Our class of streaming problems includes the most 
+					  well-studied problems such as the L2-heavy hitters problem, Fp-moment estimation, as well as empirical entropy estimation. We substantially 
+					  improve upon all prior work on these problems, giving the first optimal dependence on the approximation factor. As in previous work, 
+					  we obtain a general transformation that applies to any non-robust streaming algorithm and depends on the so-called flip number. 
+					  However, the key technical innovation is that we apply the transformation to what we call a difference estimator for the streaming problem, 
+					  rather than an estimator for the streaming problem itself. We then develop the first difference estimators for a wide range of problems. 
+					  Our difference estimator methodology is not only applicable to the adversarially robust model, but to other streaming models where 
+					  temporal properties of the data play a central role, and in particular, we obtain the first optimal dependence on eps for 
+					  Fp-moment estimation in the sliding window model.</br></br>
+
+					  Based on joint work with Samson Zhou.
+                    </p>
+					</div>
                   </div>
                 </div>
                 <hr />
