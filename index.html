@@ -265,9 +265,9 @@
 						copies of the problem with advantage much better than delta^L. </br></br>
 
 					We will also discuss open problems and possible directions for future work. Based on the following joint works: </br>
-Sepehr Assadi and Vishvajeet N: Graph Streaming Lower Bounds for Parameter Estimation and Property Testing via a Streaming XOR Lemma (arXiv: abs/2104.04908) 
+Sepehr Assadi and Vishvajeet N: Graph Streaming Lower Bounds for Parameter Estimation and Property Testing via a Streaming XOR Lemma (arXiv: <a href="https://arxiv.org/abs/2104.04908">abs/2104.04908</a>) 
 </br>
-Sepehr Assadi, Gillat Kol, Raghuvansh Saxena, and Huacheng Yu: Multi-Pass Graph Streaming Lower Bounds for Cycle Counting, MAX-CUT, Matching Size, and Other Problems (arXiv: abs/2009.03038)
+Sepehr Assadi, Gillat Kol, Raghuvansh Saxena, and Huacheng Yu: Multi-Pass Graph Streaming Lower Bounds for Cycle Counting, MAX-CUT, Matching Size, and Other Problems (arXiv: <a href="https://arxiv.org/abs/2009.03038">abs/2009.03038</a>)
                     </p>
 				</div>
                   </div>
@@ -789,7 +789,7 @@ a few interesting phenomena, even in regimes which were hitherto thought
 to be well understood.<br><br>
 
 Joint work with Ayush Jain, Gautam Kamath, and Jerry Li
-(arXiv:abs/2106.13414).
+(arXiv:<a href="https://arxiv.org/abs/2106.13414">abs/2106.13414</a>).
                     </p>
                   </div>
 				  </div>
@@ -868,16 +868,27 @@ This is joint work with Asaf Rosin.
                     <!-- <span class="fs-3"><i class="bi bi-chat-left-quote"></i> 
                       <span class="talk-title">Talk Title</span>  
                       <small class="text-muted"><a href="#"></a></small></span> -->
-                      <span class="talk-title"><a href="https://people.cs.umass.edu/~cmusco/">Cameron Musco</a></span> 
-                      <br><br> 
-                    <!-- <p>
-                      This talk will be about blah blah blah. Autem iusto
-                      eos praesentium aliquam expedita repellendus
-                      necessitatibus. Laboriosam porro enim earum. Commodi
-                      velit eligendi aperiam iusto. Atque velit
-                      perferendis voluptas doloremque maiores. Accusamus
-                      quo et necessitatibus ut soluta quo voluptatem.
-                    </p> -->
+                      <span class="talk-title"><a href="https://people.cs.umass.edu/~cmusco/">Cameron Musco</a>: Hutch++: Optimal Stochastic Trace Estimation</span> 
+                      [<a href="javascript:toggle('CaM')">Abstract</a>]
+					  <div id="CaM" style="display: none">
+                    <p>
+                      We study the problem of estimating the trace of a matrix that can only be accessed through matrix-vector multiplication. We introduce a 
+					  new randomized algorithm, Hutch++, which computes a (1+epsilon) approximation to the trace of any positive semidefinite (PSD) matrix 
+					  using just O(1/epsilon) matrix-vector products. This improves quadratically on the ubiquitous Hutchinson's estimator, which requires 
+					  O(1/epsilon^2) matrix-vector products.</br></br>
+
+					Our approach is based on a simple technique for reducing the variance of Hutchinson's estimator using low-rank approximation, and is easy 
+					to implement and analyze. Moreover, we prove that up to a logarithmic factor, the complexity of Hutch++ is optimal amongst all matrix-vector 
+					query algorithms. We show that it significantly outperforms Hutchinson's method in experiments, on both PSD and non-PSD matrices.</br></br>
+
+					In the talk, I will also discuss a broader research program of finding asymptotically optimal algorithms for basic linear algebra problems 
+					in the matrix-vector query model of computation. Beyond our work on trace estimation, there is exciting recent progress on linear systems and 
+					eigenvalue approximation. I will briefly discuss remaining open questions and  interesting connections to work in theoretical computer science, 
+					including on communication complexity and fine-grained complexity theory.</br></br>
+
+					This work is joint with Raphael A Meyer, Christopher Musco, and David P Woodruff. The associated paper appeared in the SIAM Symposium on Simplicity in Algorithms (SOSA 2021) and can be found here: <a href="https://arxiv.org/abs/2010.09649">https://arxiv.org/abs/2010.09649</a>.
+                    </p>
+					</div>
                   </div>
                 </div>
                 <hr />
